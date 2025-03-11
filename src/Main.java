@@ -17,16 +17,16 @@ public class Main {
             System.out.print("Şifreyi giriniz: ");
             String sifre = scanner.nextLine();
             if (sifre.length() < 8) {
-                System.out.println("❌Lütfen 8 ve üstü karakterde şifre deneyiniz!");
+                System.out.println("❌Geçersiz Şifre (Lütfen 8 ve üstü karakterde şifre deneyiniz!)");
             } else if (sifre.contains(" ")) {
-                System.out.println("❌Lütfen boşluk kullanmadan deneyiniz!");
+                System.out.println("❌Geçersiz Şifre (Lütfen boşluk kullanmadan deneyiniz!)");
             } else if (!Character.isUpperCase(sifre.charAt(0))) {
-                System.out.println("❌Lütfen ilk harfi büyük karakter olarak deneyiniz!");
+                System.out.println("❌Geçersiz Şifre (Lütfen ilk harfi büyük karakter olarak deneyiniz!)");
             } else if (sifre.charAt(sifre.length() - 1) == '?') {
-                System.out.println("✅......... Şifre Başarılı........ !");
+                System.out.println("✅......... Geçerli Şifre........ !");
                 break;
             } else {
-                System.out.println("❌Lütfen son karakter ? olarak deneyiniz!");
+                System.out.println("❌Geçersiz Şifre (Lütfen son karakter ? olarak deneyiniz!)");
             }
         }
     }
